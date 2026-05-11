@@ -1,0 +1,43 @@
+baseURL = "https://trudramukerji14.github.io/"
+locale = "en-us"
+title = "Trudra Mukerji"
+theme = "PaperMod"
+[pagination]
+  pagerSize = 5
+
+[params]
+  author = "Trudra Mukerji"
+  description = "Thoughts on tech, life, and everything in between."
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+
+  [params.homeInfoParams]
+    Title = "Hi, I'm Trudra"
+    Content = "Welcome to my corner of the internet. I write about software, ideas, and things I find interesting."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/trudramukerji14"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 30
