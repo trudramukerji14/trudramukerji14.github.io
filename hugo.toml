@@ -1,6 +1,6 @@
 baseURL = "https://trudramukerji14.github.io/"
 locale = "en-us"
-title = "Trudra Mukerji"
+title = "TMuk's Blog"
 theme = "PaperMod"
 [pagination]
   pagerSize = 5
@@ -24,6 +24,15 @@ theme = "PaperMod"
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/trudramukerji14"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.goldmark.extensions.passthrough]
+  enable = true
+  [markup.goldmark.extensions.passthrough.delimiters]
+    block = [['\[', '\]'], ['$$', '$$'], ['\begin{equation}', '\end{equation}'], ['\begin{align}', '\end{align}']]
+    inline = [['\(', '\)'], ['$', '$']]
 
 [menu]
   [[menu.main]]
