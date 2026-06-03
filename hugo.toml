@@ -6,8 +6,8 @@ theme = "PaperMod"
   pagerSize = 5
 
 [params]
-  author = "Trudra Mukerji"
-  description = "Thoughts on tech, life, and everything in between."
+  author = "TRM"
+  description = "Thoughts on research, software, etc"
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowShareButtons = false
@@ -18,8 +18,8 @@ theme = "PaperMod"
   TocOpen = false
 
   [params.homeInfoParams]
-    Title = "Hi, I'm Trudra"
-    Content = "Welcome to my corner of the internet. I write about software, ideas, and things I find interesting."
+    Title = "Hi, I'm Tantrik"
+    Content = "Welcome to my corner of the internet. I write about software, math, and generally things I find interesting."
 
   [[params.socialIcons]]
     name = "github"
