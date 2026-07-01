@@ -104,7 +104,7 @@ where $\mathbf{H}^{-1}_{:,0}$ is the first column of $\mathbf{H}^{-1}$. Stacking
     \boldsymbol{\Delta}^{*} = \frac{1}{[\mathbf{H}^{-1}]_{00}} \mathbf{E}_0\, (\mathbf{H}^{-1}_{:,0})^{\top} \in \mathbb{R}^{d_{\text{row}} \times d_{\text{col}}} \tag{5}
 \end{equation}
 
-where $\mathbf{E}_{0} = (\boldsymbol{\delta}_0^{(0)},\, \boldsymbol{\delta}_0^{(1)},\, \ldots,\, \boldsymbol{\delta}_0^{(d_{\text{row}})})^{\top} \in \mathbb{R}^{d_{\text{row}} \times 1}$ is the vector of per-row quantization errors. The remaining weights are updated as $\mathbf{W} \leftarrow \mathbf{W} - \boldsymbol{\Delta}^{*}$. Each row of $\boldsymbol{\Delta}^{*}$ shares the same $\mathbf{H}^{-1}$ terms, which is the key efficiency gain.
+where $\mathbf{E}_{0} = ({\delta}_0^{(0)},\, {\delta}_0^{(1)},\, \ldots,\, {\delta}_0^{(d_{\text{row}})})^{\top} \in \mathbb{R}^{d_{\text{row}} \times 1}$ is the vector of per-row quantization errors. The remaining weights are updated as $\mathbf{W} \leftarrow \mathbf{W} - \boldsymbol{\Delta}^{*}$. Each row of $\boldsymbol{\Delta}^{*}$ shares the same $\mathbf{H}^{-1}$ terms, which is the key efficiency gain.
 
 Moving to the next column, we apply equation (4) to remove the $0$th row and column from $\mathbf{H}^{-1}$, costing $O(d_{\text{col}}^{2})$, then apply the weight update to $\mathbf{W}_{:,1:} \in \mathbb{R}^{d_{\text{row}} \times (d_{\text{col}}-1)}$ in $O(d_{\text{row}} d_{\text{col}})$. Repeating for all $d_{\text{col}}$ columns gives total complexity $O(d_{\text{row}} d_{\text{col}}^{2}) + O(d_{\text{col}}^{3})$.
 
